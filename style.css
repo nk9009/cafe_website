@@ -1,0 +1,264 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    color: #000;
+    border-collapse: collapse;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* ---------- header --------- */
+
+.intro_bg{
+    background-image: url(../images/intro.jpg);
+    width: 100%;
+    height: 600px;
+}
+header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto; /*header 안 content들 무조건 가운데 정렬*/
+}
+header .header_nav{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+header .header_nav .search{
+    flex: 1;
+}
+header .header_nav .search input{
+    padding: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+header .header_nav .search span{
+    cursor: pointer;
+    margin-left: 10px;
+    transition: opacity 0.3s;
+}
+header .header_nav .search span:hover{
+    opacity: 0.5;
+}
+header .header_nav .menu{
+    list-style: none;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+header .header_nav .menu a{
+    margin-left: 30px;
+    transition: opacity 0.3s;
+}
+header .header_nav .menu a:hover{
+    opacity: 0.5;
+}
+header .header_txt{
+    width: 100%;
+    position: relative;
+    top: 230px;
+    text-align: center;
+}
+header .header_txt h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+
+
+/* ---------- main --------- */
+main{
+    background: beige;
+    width: 100%;
+
+}
+.amount{
+    width: 1280px;
+    position: relative;
+    top: -75px;
+}
+.amount ul{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    flex-wrap: nowrap;
+}
+.amount ul li{
+    background-color: #fff;
+    font-size: 18px;
+    padding: 50px;
+    flex: 1;
+}
+.amount ul li:not(:last-child){
+    border-right: 1px solid gray;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: -20px;
+}
+.about h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.about h2{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+.about .about_wrap{
+    display: flex;
+    margin: 20px auto;
+    list-style: none;
+    justify-content: center;
+}
+.about .about_wrap li{
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+}
+.about .about_wrap li:not(:last-child){
+    margin-right: 20px;
+}
+.about .about_wrap li img{
+    width: 100px;
+}
+.about .about_wrap li h3{
+    font-size: 20px;
+}
+.about .about_wrap li p{
+    margin-top: 8px;
+    font-size: 16px;
+} 
+.more_btn{
+    background: #2e4bee;
+    margin-top: 30px;
+    border: none;
+    padding: 5px 25px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.bg_wrap{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 50px;
+}
+.service{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+}
+.service h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+.service h2{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+.service_wrap{
+    display: flex;
+}
+.service_image{
+    flex: 1;
+    width: 50%;
+}
+.service_txt{
+    flex: 1;
+    text-align: left;
+    padding: 12px;
+}
+.service_txt h4{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+
+.join{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.join_img{
+    display: flex;
+}
+
+.join_img1, .join_img2{
+    width: 45%;
+    flex: 1;
+    z-index: 1;
+}
+.join_txt{
+    position: absolute;
+    top: 220px;
+    right: 200px;
+    line-height: 40px;
+    z-index: 2;
+}
+.join_txt h1, .join_txt h4{
+    color: #fff;
+    font-weight: lighter;
+}
+.join_txt h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.join_more{
+    border: 1px solid #fff;
+    padding: 6px 50px;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+.join_more:hover{
+    opacity: 0.2;
+}
+
+/* footer */
+footer{
+    background: #1f1f1f;
+    padding: 30px;
+    display: flex;
+}
+footer .logo{
+    flex: 3;
+    text-align: center;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+footer .logo_txt{
+    flex: 9;
+    line-height: 24px;
+}
+footer .logo_txt p{
+    font-size: 16px;
+    color: #fff;
+}
+footer .logo_txt .join_more{
+    font-size: 16px;
+    color: #fff;
+}
